@@ -10,13 +10,16 @@ Sudo npm install codeceptjs --save-dev
 
 codeceptjs init (IO para selenium, puppeteer sem selenium)
 
-create firs test: codeceptjs gt
+add Gherkin:
+codeceptjs gherkin:init
+
+create steps: codeceptjs gherkin:snippets
 
 Selenium:
 [sudo] npm install -g selenium-standalone
 selenium-standalone install
 selenium-standalone start
 
-To run: codeceptjs run --steps
+To run: codeceptjs run --features
  
 TO LIST COMANDS CODECEPT: codeceptjs list
