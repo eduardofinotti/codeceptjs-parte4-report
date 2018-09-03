@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2018-08-30T13:20:59.445Z",
+    "end": "2018-08-30T13:21:10.118Z",
+    "duration": 10673,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "812ac70c-5f23-4bdf-9611-716e6b9d866c",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "b34b1282-622a-428e-b1da-9ef80fdbc5e1",
+        "title": "Pesquisa google",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "Pesquisa google \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3bb02db4-a480-42b6-ae62-23a202974d94",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Pesquisa google \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 799,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "79fd801a-0d34-4a74-bb04-f7e3253f6a62",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "Pesquisa google \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b687d1c2-310f-48c4-a695-975677ef0d70",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: codeceptjs.after",
+            "fullTitle": "Pesquisa google \"after each\" hook: codeceptjs.after",
+            "timedOut": false,
+            "duration": 161,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "6194fb21-1fbb-4a14-9b56-f263ebf20299",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "feature pesquisar o site do Foo Fighters",
+            "fullTitle": "Pesquisa google feature pesquisar o site do Foo Fighters",
+            "timedOut": false,
+            "duration": 3759,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "context": "\"que estou no site google\"",
+            "code": "runSteps(child.steps)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b200b35c-a598-4d1f-8b3f-42c01a4ea7d7",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "feature pesquisar o site do Foo Fighters fail",
+            "fullTitle": "Pesquisa google feature pesquisar o site do Foo Fighters fail",
+            "timedOut": false,
+            "duration": 4935,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "context": "[\n  \"que estou no site google\",\n  \"feature_pe_3f90df46-7d6a-4128-8d4d-0a2c88b0c609.failed.png\"\n]",
+            "code": "runSteps(child.steps)",
+            "err": {
+              "message": "Error: No steps matching \"eu vejo o site da banda nos resultados (para dar erro)\"",
+              "estack": "No steps matching \"eu vejo o site da banda nos resultados (para dar erro)\""
+            },
+            "isRoot": false,
+            "uuid": "3f90df46-7d6a-4128-8d4d-0a2c88b0c609",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b200b35c-a598-4d1f-8b3f-42c01a4ea7d7"
+        ],
+        "failures": [
+          "3f90df46-7d6a-4128-8d4d-0a2c88b0c609"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 8694,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 0
+  },
+  "copyrightYear": 2018
+}

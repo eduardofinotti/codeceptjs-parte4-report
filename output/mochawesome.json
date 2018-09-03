@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2018-08-30T13:42:54.404Z",
+    "end": "2018-08-30T13:43:11.414Z",
+    "duration": 17010,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "113f4e2a-c2d5-4b9e-ad2a-85d9967aaa4c",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "bde37efb-4a8c-4a68-8aff-136d2ee08bee",
+        "title": "Pesquisa google",
+        "fullFile": "/Users/eduardofinotti/Documents/artigos/porjetos/parte4 - REPORT- BDD and NO-BDD - codeceptjs-BDD-base/pesquisa_google_test.js",
+        "file": "/pesquisa_google_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "Pesquisa google \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "68cc8cf1-1565-40d5-b96f-09e36e78fb5f",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Pesquisa google \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 833,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "12d563d3-43de-48df-bcf5-6e5e2e1bca4f",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "Pesquisa google \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "fdb4b91e-6640-4585-8a3b-ff2ecbeb6db4",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: finalize codeceptjs",
+            "fullTitle": "Pesquisa google \"after each\" hook: finalize codeceptjs",
+            "timedOut": false,
+            "duration": 114,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "cd12cad6-46d3-45e5-8932-ce8dc30b97d0",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "Pesquisa com sucesso",
+            "fullTitle": "Pesquisa google: Pesquisa com sucesso",
+            "timedOut": false,
+            "duration": 4733,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "I.amOnPage('/');\nI.fillField('#lst-ib', 'foo fighters');\nI.click('btnK');\nI.wait(1);\nI.see('https://foofighters.com/')",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9d5097ab-0ee1-49a6-a994-928d366b01be",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Pesquisa com erro",
+            "fullTitle": "Pesquisa google: Pesquisa com erro",
+            "timedOut": false,
+            "duration": 10047,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "context": "\"Pesquisa_c_3a3305aa-6b7a-4e24-8840-19336f4558cb.failed.png\"",
+            "code": "I.amOnPage('/');\nI.fillField('#lst-ib', 'foo fighters');\nI.click('btnK');\nI.see('https://foofighters.com/')\nI.wait(1);\nI.see('https://fooxxxfighters.com/')",
+            "err": {
+              "message": "Error: expected web page to include \"https://fooxxxfighters.com/\"",
+              "estack": "expected web page to include \"https://fooxxxfighters.com/\"\n\nScenario Steps:\n\n- Eu.vejo(\"https://fooxxxfighters.com/\") at Object.obj.(anonymous function).obj.(anonymous function) (node_modules/codeceptjs/lib/actor.js:28:26)\n- Eu.aguardo(1) at Object.obj.(anonymous function).obj.(anonymous function) (node_modules/codeceptjs/lib/actor.js:28:26)\n- Eu.vejo(\"https://foofighters.com/\") at Object.obj.(anonymous function).obj.(anonymous function) (node_modules/codeceptjs/lib/actor.js:28:26)\n- Eu.clico(\"btnK\") at Object.obj.(anonymous function).obj.(anonymous function) (node_modules/codeceptjs/lib/actor.js:28:26)\n- Eu.preenchoOCampo(\"#lst-ib\", \"foo fighters\") at Object.obj.(anonymous function).obj.(anonymous function) (node_modules/codeceptjs/lib/actor.js:28:26)\n- Eu.estouNaPagina(\"/\") at Object.obj.(anonymous function).obj.(anonymous function) (node_modules/codeceptjs/lib/actor.js:28:26)\n\n",
+              "diff": "- Fazer login\n- TodasVídeosNotíciasImagensShoppingMais\n- Configurações\n- Ferramentas\n- Aproximadamente 37.100.000 resultados (0,33 segundos) \n- Looking for results in English?\n- Change to English\n- Manter em português\n- Configurações de idioma\n- \n- --( 147 lines more )---\n+ https://fooxxxfighters.com/\n"
+            },
+            "isRoot": false,
+            "uuid": "3a3305aa-6b7a-4e24-8840-19336f4558cb",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "9d5097ab-0ee1-49a6-a994-928d366b01be"
+        ],
+        "failures": [
+          "3a3305aa-6b7a-4e24-8840-19336f4558cb"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 14780,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 0
+  },
+  "copyrightYear": 2018
+}

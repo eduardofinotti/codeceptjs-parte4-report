@@ -3,13 +3,23 @@
   "helpers": {
     "WebDriverIO": {
       "url": "https://www.google.com.br",
-      "browser": "chrome"
+      "browser": "chrome",
+      "uniqueScreenshotNames": "true"
+    },
+    
+    "Mochawesome": {
+      "uniqueScreenshotNames": "true"
     }
+
   },
   "include": {
     "I": "./steps_file.js"
   },
-  "mocha": {},
+  "mocha": {
+    "reporterOptions": {
+        "reportDir": "./output"      
+    }
+  },
   "bootstrap": false,
   "teardown": null,
   "hooks": [],
